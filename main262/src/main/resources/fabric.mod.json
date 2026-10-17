@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "frfndr",
+  "version": "1.0.0",
+  "name": "FrFndr",
+  "description": "按物品名高亮附近装着该物品的展示框（连线指向）\n\n命令：\n/sou <物品>  搜索（注册名/中文/英文/附魔书）\n/sou off  清除全部\n/sou list  查看目标\n/sou radius N  扫描半径（持久化）\n/sou style  连线/方框切换（持久化）\nK  GUI 搜索界面",
+  "authors": ["upm"],
+  "license": "MIT",
+  "icon": "assets/frfndr/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.local.framefinder.FrameFinderClient"],
+    "modmenu": ["com.local.framefinder.FrFndrModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": ">=26.2 <26.3",
+    "java": ">=25",
+    "fabric-api-base": "*",
+    "fabric-command-api-v2": "*",
+    "fabric-key-mapping-api-v1": "*",
+    "fabric-lifecycle-events-v1": "*",
+    "fabric-rendering-v1": "*"
+  }
+}
